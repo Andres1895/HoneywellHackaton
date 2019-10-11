@@ -18,7 +18,7 @@ public class CompanyDaoImpl implements CompanyDao {
 	@SuppressWarnings("unchecked")
 	public List<Company> getAllCompanies() {
 		
-		return sessionFactory.getCurrentSession().createQuery("from COMPANY").list();
+		return sessionFactory.getCurrentSession().createQuery("  from Company").list();
 	}
 	
 

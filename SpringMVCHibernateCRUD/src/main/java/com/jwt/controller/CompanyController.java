@@ -1,9 +1,13 @@
 package com.jwt.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.jwt.model.Company;
 import com.jwt.service.CompanyService;
 import com.sun.istack.internal.logging.Logger;
 
@@ -16,8 +20,11 @@ public class CompanyController {
 	private CompanyService companyService;
 	
 	@RequestMapping(value = "/")
-	public String getAllCompanies() {
-		return "hola C:";
+	public List<Company> getAllCompanies() {
+		List<Company> listCompanies = new ArrayList<>();
+		
+		return listCompanies = companyService.getAllCompanies();
+		
 	}
 	
 

@@ -11,13 +11,13 @@ public class Company {
 
 	@Id
 	@Column(name="ID")
-	Integer idCompany;
+	private Integer idCompany;
 	
 	@Column(name="COMPANY_NAME")
-	String  companyName;
+	private String  companyName;
 	
 	@Column(name="PLACE")
-	String companyPlace;
+	private String companyPlace;
 	
 	
 	public Integer getIdCompany() {
